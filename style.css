@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+:root {
+    --primary: #f7ecb7;
+    --beer: #ffd396;
+    --background: #FEBC58;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins',sans-serif;
+    background-color: var(--background);
+    color: var(--primary);
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+    font-size: 3rem;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+
+}
+
+
+.random-beer {
+    color: white;
+    margin-top: 150px;
+    font-size: 2rem;
+}
+
+.description {
+    max-width: 600px;
+    font-size: 20px;
+}
+
+.beer-button {
+    display: inline-flex;
+}
+
+.beer-button a {
+    display: inline-block;
+    text-decoration: none;
+    background-color: var(--background);
+    box-shadow: -8px -8px 12px 0 rgba(0, 0, 0, 0.3),
+                12px 12px 16px rgba(255, 255, 255, 0.25);
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    transition: 0.5s;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.beer-button a:hover {
+    box-shadow: inset 6px 6px 10px 0 rgba(0, 0, 0, 0.2),
+                inset -6px -6px 10px 0 rgba(255, 255, 255, 0.5)
+}
+
+.fa-beer {
+    color: var(--beer);
+    font-size: 50px;
+}
